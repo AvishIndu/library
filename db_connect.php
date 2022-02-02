@@ -1,5 +1,7 @@
 <?php
-	$con = mysqli_connect('localhost', 'root', '', 'librarygh');
-	if(!$con)
-		die("ERROR: Couldn't connect to database");
+	  $bdd = new PDO(
+    	"mysql:host=" . getenv("MYSQL_ADDON_HOST") . ";dbname=" . getenv("MYSQL_ADDON_DB"),
+    	getenv("MYSQL_ADDON_USER"),
+    	getenv("MYSQL_ADDON_PASSWORD")
+  );
 ?>
