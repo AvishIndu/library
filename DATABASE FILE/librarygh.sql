@@ -19,7 +19,13 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `librarygh`
---
+--MYSQL_ADDON_DB="bsyyqh1phdgn8rnwir5d"
+MYSQL_ADDON_HOST="bsyyqh1phdgn8rnwir5d-mysql.services.clever-cloud.com"
+MYSQL_ADDON_PASSWORD="ZdgnP3twhADdkS95ETiW"
+MYSQL_ADDON_PORT="3306"
+MYSQL_ADDON_URI="mysql://uk8xaiuids3mx73a:ZdgnP3twhADdkS95ETiW@bsyyqh1phdgn8rnwir5d-mysql.services.clever-cloud.com:3306/bsyyqh1phdgn8rnwir5d"
+MYSQL_ADDON_USER="uk8xaiuids3mx73a"
+MYSQL_ADDON_VERSION="8.0"
 
 DELIMITER $$
 --
