@@ -1,7 +1,7 @@
 <?php
 	  $bdd = new PDO(
-    	"mysql:host=" . getenv("MYSQL_ADDON_HOST") . ";dbname=" . getenv("MYSQL_ADDON_DB"),
-    	getenv("MYSQL_ADDON_USER"),
-    	getenv("MYSQL_ADDON_PASSWORD")
+    	"mysql:host=" . getenv("bsyyqh1phdgn8rnwir5d") . ";dbname=" . getenv("bsyyqh1phdgn8rnwir5d"),
+    	getenv("uk8xaiuids3mx73a"),
+    	getenv("ZdgnP3twhADdkS95ETiW")
   );
 ?>
