@@ -25,7 +25,7 @@ DELIMITER $$
 --
 -- Procedures
 --
-CREATE DEFINER=`heroku_f5c00d650e802c4`@`localhost` PROCEDURE `generate_due_list` ()  NO SQL
+CREATE DEFINER=`uk8xaiuids3mx73a`@`bsyyqh1phdgn8rnwir5d-mysql.services.clever-cloud.com` PROCEDURE `generate_due_list` ()  NO SQL
 SELECT I.issue_id, M.email, B.isbn, B.title
 FROM book_issue_log I INNER JOIN member M on I.member = M.username INNER JOIN book B ON I.book_isbn = B.isbn
 WHERE DATEDIFF(CURRENT_DATE, I.due_date) >= 0 AND DATEDIFF(CURRENT_DATE, I.due_date) % 5 = 0 AND (I.last_reminded IS NULL OR DATEDIFF(I.last_reminded, CURRENT_DATE) <> 0)$$
